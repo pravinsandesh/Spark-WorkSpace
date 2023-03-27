@@ -1,0 +1,10 @@
+in simple words you can consider accumulator as write only variable which are shared among executors on the other hand broadcast variables are read only variable which are shared among the executors by caching it on each machine.
+
+Use case for Accumulators:
+
+When you want to maintain some counter variable throughout spark execution.
+
+broadcas veriable:-
+ a variable needs to be shared across tasks, or between tasks and the driver program.  broadcast variables, which can be used to cache a value in memory on all nodes. 
+accumulators:-
+ which are variables that are only “added” to, such as counters and sums.
